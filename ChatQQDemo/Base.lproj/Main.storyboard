@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ltQ-bR-xfo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9Sy-t7-66f">
+            <objects>
+                <navigationController id="ltQ-bR-xfo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kvq-cU-NTK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C5M-eq-MVS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R61-6c-68Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-953" y="-356"/>
+        </scene>
+        <!--调用QQ发起临时会话-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xh-ki-hxO">
+                                <rect key="frame" x="154.5" y="300.5" width="66" height="66"/>
+                                <state key="normal" image="icon_qq"/>
+                                <connections>
+                                    <action selector="chatQQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mO6-dT-YWY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-lS-lFL">
+                                <rect key="frame" x="201" y="256" width="70" height="65"/>
+                                <state key="normal" image="icon_chat"/>
+                                <connections>
+                                    <action selector="chatQQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgO-jB-a08"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认已安装手机QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRz-5Y-OFt">
+                                <rect key="frame" x="120" y="386.5" width="136" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96461421251296997" green="0.96477204561233521" blue="0.96458059549331665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Xh-ki-hxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9l-bz-aya"/>
+                            <constraint firstItem="2Xh-ki-hxO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VCN-n9-CcA"/>
+                            <constraint firstItem="SRz-5Y-OFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clu-CK-4Kc"/>
+                            <constraint firstItem="2Xh-ki-hxO" firstAttribute="top" secondItem="g8B-lS-lFL" secondAttribute="bottom" constant="-20.5" id="fRr-WZ-YWB"/>
+                            <constraint firstItem="SRz-5Y-OFt" firstAttribute="top" secondItem="2Xh-ki-hxO" secondAttribute="bottom" constant="20" id="qWo-S6-Rs2"/>
+                            <constraint firstItem="g8B-lS-lFL" firstAttribute="leading" secondItem="2Xh-ki-hxO" secondAttribute="trailing" constant="-19.5" id="y0P-JM-j4z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="调用QQ发起临时会话" id="qiQ-U9-sBs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="-357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_chat" width="70" height="65"/>
+        <image name="icon_qq" width="66" height="66"/>
+    </resources>
+</document>

@@ -4,7 +4,7 @@
 
 在App内调用QQ客户端,在不是好友前提下,向指定的客服QQ发起临时会话,很简单的演示：
 
-![](http://og1yl0w9z.bkt.clouddn.com/18-4-18/72232091.jpg)
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-18/99279827.jpg)
 
 进入手机 QQ 指定客服人员进行临时会话：
 

@@ -1,5 +1,4 @@
 # LinkChatQQDemo
-Invoke QQ to initiate a temporary session
 
 ## 🎨 测试 UI 什么样子？
 
